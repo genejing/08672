@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <p class="one"><label>X</label>
+        <input type="text" id=xValue></p>
+    <p class="two"><label>Y</label>
+        <input type="text" id=yValue></p>
+    <p class="three"><label>Answer</label>
+        <input type="text" id="result" readonly=""></p>
+    <input type="button" value="+" onclick="plus()">
+    <input type="button" value="-" onclick="minus()">
+    <input type="button" value="*" onclick="multiply()">
+    <input type="button" value="/" onclick="divide()">
+</body>
+    <style type="text/css">
+        p.one {
+           background-color: green; 
+        }
+    </style>
+
+<script type="text/javascript">
+    function plus(){
+    var x,y,ans;
+    x = document.getElementById("xValue").value;
+    y = document.getElementById("yValue").value;
+    ans = parseInt(x) + parseInt(y);
+    document.getElementById("result").value = ans;
+}
+    function minus(){
+    var x,y,ans;
+    x = document.getElementById("xValue").value;
+    y = document.getElementById("yValue").value;
+    ans = parseInt(x) - parseInt(y);
+    document.getElementById("result").value = ans;
+}
+    function multiply(){
+    var x,y,ans;
+    x = document.getElementById("xValue").value;
+    y = document.getElementById("yValue").value;
+    ans = parseInt(x) * parseInt(y);
+    document.getElementById("result").value = ans;
+}
+    function divide(){
+    var x,y,ans;
+    x = document.getElementById("xValue").value;
+    y = document.getElementById("yValue").value;
+    ans = parseInt(x) / parseInt(y);
+    document.getElementById("result").value = ans;
+}
+</script>
+</html>
+
